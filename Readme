@@ -17,4 +17,8 @@ $ telnet route.heroku.com ...
 
 CAVEAT LECTOR
 
-Talk to me before you use this.
+Heroku provides no persistent filesystem, which means
+there's no point to the -b flag; plus, Heroku kills
+each of your dynos once per day (at least). So it's
+quite likely you'll lose a few jobs here and there.
+If you're cool with that, proceed!
