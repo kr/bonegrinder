@@ -1,3 +1,5 @@
+beanstalkd on heroku
+
 SET UP:
 
 1. git clone https://github.com/kr/bonegrinder.git
