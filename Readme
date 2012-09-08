@@ -1,0 +1,18 @@
+SET UP:
+
+1. git clone https://github.com/kr/bonegrinder.git
+2. cd bonegrinder
+3. heroku create --buildpack=http://github.com/kr/heroku-buildpack-inline.git
+4. heroku plugins:install https://github.com/JacobVorreuter/heroku-routing.git
+5. heroku sudo labs:enable tcp-routing
+6. heroku routes:create
+7. heroku routes:attach tcp://route.heroku.com:... bs
+8. heroku scale bs=2
+
+TRY IT:
+
+$ telnet route.heroku.com ...
+
+CAVEAT LECTOR
+
+Talk to me before you use this.

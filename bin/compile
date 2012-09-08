@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+unset GIT_DIR
+cd /tmp
+git clone https://github.com/kr/beanstalkd.git
+cd beanstalkd
+make
+cp beanstalkd $1/bin
